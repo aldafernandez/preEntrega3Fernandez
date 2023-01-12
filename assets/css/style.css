@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: aquamarine;
+  height: 80px;
+}
+nav > label, nav > input {
+  display: none;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .navbar > a {
+  display: block;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  nav > label {
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+  }
+  nav > input:checked + .navbar {
+    max-height: 400px;
+  }
+  nav .navbar {
+    background-color: aquamarine;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
