@@ -1,8 +1,15 @@
 nav{
     background-color: aquamarine;
     height: 80px;
+    position: relative;
     >label, > input{
         display: none;
+    }
+    .logo {
+        display: none;
+        width: 50px;
+        position: absolute;
+        margin: 5px;  
     }
     .navbar{
         display: flex; 
@@ -12,10 +19,14 @@ nav{
             text-align: center;
             padding: 25px 16px;
             text-decoration: none;
+            font-family: $font;
+            font-size: 30px;
+            color: $colorPrincipal;
         }
+    
     }
     @media screen and (max-width: 500px){
-        nav > label{
+        > label{
             display: block;
             color: white;
             font-size: 30px;
@@ -30,6 +41,7 @@ nav{
             max-height: 0px;
             overflow: hidden;
             transition: 0.5s;
-        }    
+        } 
+        
     }
 }

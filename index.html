@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pininos</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="./assets/img/teddy-bear.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -19,15 +20,44 @@
                 <a href="./pages/contacto.html">Contacto</a>
                 <a href="./pages/nosotros.html">Nosotros</a>
                 <a href="./pages/gift-card.html">Gift Card</a>
-                </div>
             </div>
+            <a href="./index.html"><img class="logo" src="./assets/img/teddy-bear.png" alt="logo"></a>
         </nav>
         <header>
-          
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img data-aos="fade-right" src="./assets/img/carrousel.3-min.jpg" alt="cuna">
+                <div class="parrafoTarjeta" data-aos="fade-left">
+                    <h3>Descubre la cuna ideal para tu bebé</h3>
+                </div>
+            </div> 
+            <div class="tarjeta">
+                <div class="parrafoTarjeta" data-aos="fade-right">
+                    <h3>Elegi el conjunto perfecto</h3>
+                </div>
+                <img data-aos="fade-left" src="./assets/img/carrousel.2.jpg" alt="ropa de bebe">
+            </div> 
+            <div class="tarjeta">
+                <img data-aos="fade-right" src="./assets/img/carrousel.4.jpg" alt="ropa de bebe">
+                <div class="parrafoTarjeta" data-aos="fade-left">
+                    <h3>Con increibles promociones y descuentos</h3>
+                </div>
+            </div> 
+            
+        </div>
         </header>
         <main>
 
         </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init(
+                {
+                    duration: 2000,
+                    once: true,  
+                }
+            );
+        </script>
     </body>
 
 </html>

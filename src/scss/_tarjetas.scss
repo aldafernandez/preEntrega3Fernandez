@@ -1,0 +1,27 @@
+.tarjetas{
+    width: 90%;
+    margin: 20px;
+
+    .tarjeta{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px ;
+        >img{
+            width: 45%;
+            height: 350px;
+        } 
+        .parrafoTarjeta{
+            padding: 20px;
+            width: 45%;
+            margin-top: 180px;
+            text-align: center;
+            > h3 {
+                font-family: $font;
+                font-size: 30px;
+                color: $colorPrincipal;
+            }
+            
+        }
+    }
+}
