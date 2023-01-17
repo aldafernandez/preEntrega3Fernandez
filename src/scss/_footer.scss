@@ -1,0 +1,30 @@
+footer{
+    .compania{
+    margin-top: 80px;
+    background-color: rgb(162, 196, 191);
+    color:$colorPrincipal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+        .iconos{
+            > i{
+                padding: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+    .infoAdicional{
+        .info{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            column-gap: 10px;
+        }
+    }
+
+}
+
+
+
+

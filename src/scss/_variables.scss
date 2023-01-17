@@ -1,2 +1,13 @@
 $font: sans-serif; 
-$colorPrincipal: rgb(76, 129, 111);
+$colorPrincipal: rgb(48, 83, 72);
+$sombra:10px 10px 5px 0px rgba(170,240,192,1);
+$tarjeta:(
+    width: 400px,
+    display: flex, 
+    flex-direction: column,
+    border:1px solid,
+    gap: 10px,
+    padding: 10px,
+    border-radius: 5px,
+    margin: 10px,
+)

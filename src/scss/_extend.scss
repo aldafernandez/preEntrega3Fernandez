@@ -1,0 +1,10 @@
+%tarjeta{
+    width: map-get($tarjeta , width );
+    display: map-get($tarjeta, display);
+    flex-direction: map-get($tarjeta,flex-direction);
+    border:map-get($tarjeta, border);
+    gap: map-get($tarjeta, gap );
+    padding: map-get($tarjeta, padding );
+    border-radius: map-get($tarjeta, border-radius);
+    margin: map-get($tarjeta, margin );
+}

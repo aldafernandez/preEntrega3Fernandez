@@ -1,47 +1,39 @@
 nav{
-    background-color: aquamarine;
-    height: 80px;
-    position: relative;
-    >label, > input{
+    background-color:rgb(162, 196, 191);
+    >label , >input {
         display: none;
-    }
-    .logo {
-        display: none;
-        width: 50px;
-        position: absolute;
-        margin: 5px;  
     }
     .navbar{
-        display: flex; 
-        justify-content: space-evenly;
+        display: flex;
         >a{
             display: block;
-            text-align: center;
-            padding: 25px 16px;
-            text-decoration: none;
-            font-family: $font;
-            font-size: 30px;
             color: $colorPrincipal;
+            font-size: 20px;
+            font-family: $font;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
+    }
     
+}
+
+@media screen and (max-width: 550px){
+    nav{
+    > label{
+        display: block;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+       }
+       > input:checked + .navbar{
+        max-height: 400px;
     }
-    @media screen and (max-width: 500px){
-        > label{
-            display: block;
-            color: white;
-            font-size: 30px;
-            padding: 10px;
-        }
-        > input:checked + .navbar{
-            max-height: 400px;
-        }
-        .navbar{
-            background-color: aquamarine;
-            flex-direction: column;
-            max-height: 0px;
-            overflow: hidden;
-            transition: 0.5s;
-        } 
-        
-    }
+    .navbar{
+        flex-direction: column;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+    }    
+ }   
 }

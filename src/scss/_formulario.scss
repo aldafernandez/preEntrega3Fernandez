@@ -1,0 +1,50 @@
+.mainForm{
+    h3{
+        font-family: $font;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        color: $colorPrincipal;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px ;
+        font-family: $font;
+        font-size: 15px;
+        color: $colorPrincipal;
+        > h4{
+            font-size: 20px;
+            > i {
+                padding: 5px;
+                font-size: 25px;
+            }
+        }
+        > label {
+          left: 5px;
+        }
+        >input {
+            width: 600px;
+            height: 40px;
+           
+        }
+        > textarea{
+            width: 600px;
+            height: 90px;
+            
+        }
+
+        > button{
+            background-color:rgb(162, 196, 191) ;
+            border: 0;
+            color: $colorPrincipal;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 600px;
+           
+        }
+       
+    }
+}

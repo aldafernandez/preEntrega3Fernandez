@@ -5,33 +5,25 @@
 }
 
 nav {
-  background-color: aquamarine;
-  height: 80px;
-  position: relative;
+  background-color: rgb(162, 196, 191);
 }
 nav > label, nav > input {
   display: none;
 }
-nav .logo {
-  display: none;
-  width: 50px;
-  position: absolute;
-  margin: 5px;
-}
 nav .navbar {
   display: flex;
-  justify-content: space-evenly;
 }
 nav .navbar > a {
   display: block;
-  text-align: center;
-  padding: 25px 16px;
-  text-decoration: none;
+  color: rgb(48, 83, 72);
+  font-size: 20px;
   font-family: sans-serif;
-  font-size: 30px;
-  color: rgb(76, 129, 111);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 550px) {
   nav > label {
     display: block;
     color: white;
@@ -42,36 +34,178 @@ nav .navbar > a {
     max-height: 400px;
   }
   nav .navbar {
-    background-color: aquamarine;
     flex-direction: column;
     max-height: 0px;
     overflow: hidden;
     transition: 0.5s;
   }
 }
-
-.tarjetas {
+.cards {
   width: 90%;
   margin: 20px;
 }
-.tarjetas .tarjeta {
+.cards .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
 }
-.tarjetas .tarjeta > img {
+.cards .card > img {
   width: 45%;
   height: 350px;
 }
-.tarjetas .tarjeta .parrafoTarjeta {
+.cards .card .parrafoCard {
   padding: 20px;
   width: 45%;
   margin-top: 180px;
   text-align: center;
 }
-.tarjetas .tarjeta .parrafoTarjeta > h3 {
+.cards .card .parrafoCard > h3 {
   font-family: sans-serif;
   font-size: 30px;
-  color: rgb(76, 129, 111);
+  color: rgb(48, 83, 72);
+  box-shadow: 10px 10px 5px 0px rgb(170, 240, 192);
+}
+
+@media screen and (max-width: 800px) {
+  .cards {
+    width: 90%;
+  }
+  .cards .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards .card > img {
+    width: 90%;
+    height: 250px;
+  }
+  .cards .card .parrafoCard {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+.tarjetas .tarjeta {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tarjetas .tarjeta > img {
+  width: 100%;
+}
+.tarjetas .tarjeta > h3 {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+.tarjetas .tarjeta > button {
+  background-color: rgb(57, 211, 159);
+  border: 0;
+  padding: 10px;
+  color: white;
+}
+.tarjetas .tarjeta > button:hover {
+  background-color: rgb(29, 73, 73);
+}
+
+.filtros {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  font-family: sans-serif;
+  color: rgb(48, 83, 72);
+}
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 30px;
+  list-style-type: none;
+  font-family: sans-serif;
+  color: rgb(48, 83, 72);
+}
+
+.mainForm h3 {
+  font-family: sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  color: rgb(48, 83, 72);
+}
+.mainForm .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: rgb(48, 83, 72);
+}
+.mainForm .formulario > h4 {
+  font-size: 20px;
+}
+.mainForm .formulario > h4 > i {
+  padding: 5px;
+  font-size: 25px;
+}
+.mainForm .formulario > label {
+  left: 5px;
+}
+.mainForm .formulario > input {
+  width: 600px;
+  height: 40px;
+}
+.mainForm .formulario > textarea {
+  width: 600px;
+  height: 90px;
+}
+.mainForm .formulario > button {
+  background-color: rgb(162, 196, 191);
+  border: 0;
+  color: rgb(48, 83, 72);
+  border-radius: 5px;
+  font-size: 20px;
+  width: 600px;
+}
+
+footer .compania {
+  margin-top: 80px;
+  background-color: rgb(162, 196, 191);
+  color: rgb(48, 83, 72);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .compania .iconos > i {
+  padding: 20px;
+  font-size: 20px;
+}
+footer .infoAdicional .info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  column-gap: 10px;
+}
+
+/*index*/
+aside h3 {
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(48, 83, 72);
+  font-size: 25px;
+  padding: 20px;
 }

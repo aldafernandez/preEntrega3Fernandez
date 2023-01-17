@@ -1,0 +1,46 @@
+.cards{
+    width: 90%;
+    margin: 20px;
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px ;
+        >img{
+            width: 45%;
+            height: 350px;
+        } 
+        .parrafoCard{
+            padding: 20px;
+            width: 45%;
+            margin-top: 180px;
+            text-align: center;
+            > h3 {
+                font-family: $font;
+                font-size: 30px;
+                color: $colorPrincipal;
+                box-shadow: $sombra; 
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .cards{
+        width: 90%;
+        .card{
+            display: flex;
+            flex-direction: column;
+            > img{
+                width: 90%;
+                height: 250px;
+            }
+            .parrafoCard{
+                margin-top: 5px;
+                width: 100%;
+            }
+        }
+    }
+
+}

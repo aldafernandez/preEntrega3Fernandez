@@ -1,4 +1,22 @@
 @import "variables";
 @import "reset";
 @import "navegador";
+@import "cards";
+@import "mixin";
+@import "extend";
 @import "tarjetas";
+@import "filtros";
+@import "categorias";
+@import "formulario";
+@import "footer";
+
+/*index*/
+aside {
+    h3{
+        font-family: $font;
+        text-align: center;
+        color: $colorPrincipal;
+        font-size: 25px;
+        padding: 20px;
+    }
+}
