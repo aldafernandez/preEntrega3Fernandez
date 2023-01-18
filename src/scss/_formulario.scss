@@ -22,9 +22,7 @@
                 font-size: 25px;
             }
         }
-        > label {
-          left: 5px;
-        }
+        
         >input {
             width: 600px;
             height: 40px;
@@ -37,12 +35,13 @@
         }
 
         > button{
-            background-color:rgb(162, 196, 191) ;
-            border: 0;
-            color: $colorPrincipal;
+            @include button(rgb(162, 196, 191), $colorPrincipal);
             border-radius: 5px;
             font-size: 20px;
             width: 600px;
+            &:hover{
+                background-color: rgb(29, 73, 73);
+            }
            
         }
        
