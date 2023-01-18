@@ -1,0 +1,10 @@
+.giftCard{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    font-family: $font;
+    color: $colorPrincipal;
+    font-size: 20px;
+    margin: 30px;
+}

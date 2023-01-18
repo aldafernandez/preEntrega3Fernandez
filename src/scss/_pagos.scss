@@ -1,0 +1,19 @@
+.pagos{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    font-family: $font;
+    color: $colorPrincipal;
+    font-size: 20px;
+    margin: 30px;
+    > button{
+        @include button(rgb(162, 196, 191), $colorPrincipal);
+        border-radius: 5px;
+        font-size: 20px;
+        width: 600px;
+        &:hover{
+            background-color: rgb(29, 73, 73);
+        }
+    }
+}

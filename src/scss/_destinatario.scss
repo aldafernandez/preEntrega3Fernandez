@@ -1,0 +1,22 @@
+.destinatario{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    font-family: $font;
+    color: $colorPrincipal;
+    font-size: 15px;
+    margin: 30px;
+    >p{
+        font-size: 20px;
+        text-decoration:underline;
+    }
+    >input{
+        width: 80%;
+        height: 30px;
+    }
+    > textarea{
+        width: 80%;
+        height: 80px;
+    }
+}

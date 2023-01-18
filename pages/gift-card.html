@@ -22,6 +22,72 @@
                 </div>
             </div>
         </nav>
+        <main >
+            <div class="giftCard">
+                <legend>Monto a regalar:</legend>
+                <label>
+                    <input type="radio" name="valor" value="$15000">
+                    $15000
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="$30000">
+                    $30000
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="$50000">
+                    $50000
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="importe">
+                    Otro importe
+                </label>
+            </div>
+            <form class="destinatario" action="">
+                <P>Destinatario</P>
+                <label> Nombre </label>    
+                <input type="text" name="nom" required>
+                <label> Apellido </label>    
+                <input type="text" name="apell" required>
+                <label> Email </label>   
+                <input type="email" name="mail"required>
+                <label> Mensaje </label>   
+                <textarea name="mensaje" placeholder="mensaje para el destinatario"></textarea>
+                <P>Tus datos</P>
+                <label> Nombre </label>    
+                <input type="text" name="nom" required>
+                <label> Apellido </label>    
+                <input type="text" name="apell" required>
+                <label>Celular </label> 
+                <input type="tel" name="telefono" required>
+                <label> Email </label>   
+                <input type="email" name="mail"required>
+            </form>
+            <div class="pagos">
+                <legend>Formas de pago - Hasta 12 cuotas sin interés</legend>
+                <label>
+                    <input type="radio" name="valor" value="efectivo">
+                    Efectivo en Pagofacil o Rapipago
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="cred">
+                    Tarjeta de credito
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="deb">
+                    Tarjeta de debito
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="mp">
+                    Dinero en Mercado Pago
+                </label>
+                <label>
+                    <input type="radio" name="valor" value="banco">
+                    Transferencia bancaria
+                </label>
+                <button>Confirmar datos</button>
+            </div>
+               
+        </main>
         <footer>
             <div class="compania">
                 <h2>Seguínos en nuestras redes sociales</h2>

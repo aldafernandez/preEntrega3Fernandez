@@ -197,6 +197,63 @@ nav .navbar > a {
   padding: 30px;
 }
 
+.giftCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+  font-family: sans-serif;
+  color: rgb(48, 83, 72);
+  font-size: 20px;
+  margin: 30px;
+}
+
+.destinatario {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  font-family: sans-serif;
+  color: rgb(48, 83, 72);
+  font-size: 15px;
+  margin: 30px;
+}
+.destinatario > p {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.destinatario > input {
+  width: 80%;
+  height: 30px;
+}
+.destinatario > textarea {
+  width: 80%;
+  height: 80px;
+}
+
+.pagos {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  font-family: sans-serif;
+  color: rgb(48, 83, 72);
+  font-size: 20px;
+  margin: 30px;
+}
+.pagos > button {
+  background-color: rgb(162, 196, 191);
+  border: 0;
+  padding: 10px;
+  color: rgb(48, 83, 72);
+  border-radius: 5px;
+  font-size: 20px;
+  width: 600px;
+}
+.pagos > button:hover {
+  background-color: rgb(29, 73, 73);
+}
+
 footer .compania {
   margin-top: 80px;
   background-color: rgb(162, 196, 191);
