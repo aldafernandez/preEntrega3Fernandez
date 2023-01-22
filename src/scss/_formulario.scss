@@ -8,7 +8,7 @@
     }
     .formulario{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         padding: 20px;
         gap: 20px ;
@@ -33,17 +33,22 @@
             height: 90px;
             
         }
-
-        > button{
-            @include button(rgb(162, 196, 191), $colorPrincipal);
-            border-radius: 5px;
-            font-size: 20px;
-            width: 600px;
-            &:hover{
-                background-color: rgb(29, 73, 73);
-            }
-           
-        }
-       
     }
+    
+}
+
+@media screen and (max-width: 630px) {
+    .mainForm{
+        .formulario{
+            >input , > textarea {
+                width: 300px;
+            }
+            @mixin button{
+                width: 400px;
+            }
+        }
+
+        
+    }
+    
 }

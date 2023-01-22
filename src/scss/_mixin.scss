@@ -1,6 +1,11 @@
 @mixin button($background,$color){
+    display: flex;
+    flex-wrap: wrap;
     background-color:$background;
     border: 0;
     padding: 10px;
     color: $color;
+    &:hover{
+        background-color: rgb(29, 73, 73);
+    }
 }

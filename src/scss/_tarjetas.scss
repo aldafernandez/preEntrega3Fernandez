@@ -13,12 +13,7 @@
             text-align: center;
 
         }
-        > button{
-            @include button(rgb(57, 211, 159), white);
-            &:hover{
-                background-color: rgb(29, 73, 73);
-            }
-        }
+    
     }
 
 

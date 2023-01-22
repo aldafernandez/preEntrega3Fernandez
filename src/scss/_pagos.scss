@@ -7,13 +7,13 @@
     color: $colorPrincipal;
     font-size: 20px;
     margin: 30px;
+   
+}
+@media screen and (max-width: 630px) {
+
     > button{
-        @include button(rgb(162, 196, 191), $colorPrincipal);
-        border-radius: 5px;
-        font-size: 20px;
-        width: 600px;
-        &:hover{
-            background-color: rgb(29, 73, 73);
-        }
+        width: 400px;
     }
+ 
+    
 }
