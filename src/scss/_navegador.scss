@@ -1,36 +1,38 @@
 .navbar{
-    background-color:rgb(162, 196, 191);
+    background-color:$background;
     display: flex;
+    position: relative;
     >label , >input{
         display: none;
-    }
-    ul{
+    }  
+    > ul {
+        list-style: none;
         display: flex;
-        list-style-type: none;
-        gap: 20px;
-        font-size: 20px;
-        font-family: $font;
-        margin: 20px;
-        position: relative;
-        >li >a {
-            text-decoration: none;
-            color: $colorPrincipal;
-        
+        justify-content: end;
+        > li {
+            position: relative;
+            &:hover ul{
+                max-height: 300px;
+                transition: 0.5s;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                padding: 20px;
+            }
+            > ul {
+                list-style: none;
+                position: absolute;
+                background-color: rgb(162, 196, 191);
+                max-height: 0;
+            }
         }
-        >li > ul {
-            position: absolute;
-            background-color:rgb(162, 196, 191);
-            max-height: 0;
-            overflow: hidden;
-          
-        }
-        
-  
     }
 }    
+
     
-
-
 @media screen and (max-width: 550px){
     .navbar{
     > label{

@@ -3,32 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.navbar {
-  background-color: rgb(162, 196, 191);
-  display: flex;
-}
-.navbar > label, .navbar > input {
+.navbar > input {
   display: none;
 }
-.navbar ul {
+.navbar > label{
+  display: none;
+}
+.navbar {
   display: flex;
-  list-style-type: none;
-  gap: 20px;
-  font-size: 20px;
-  font-family: sans-serif;
-  margin: 20px;
+  background-color:rgb(162, 196, 191);
   position: relative;
 }
-.navbar ul > li > a {
-  text-decoration: none;
-  color: rgb(48, 83, 72);
+
+.navbar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
 }
-.navbar ul > li > ul {
+
+.navbar > ul > li {
+  position: relative;
+}
+
+.navbar > ul > li:hover ul {
+  max-height: 300px;
+  transition: 0.5s;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.navbar > ul > li > ul {
+  list-style: none;
   position: absolute;
   background-color: rgb(162, 196, 191);
   max-height: 0;
-  overflow: hidden;
+
 }
 
 @media screen and (max-width: 550px) {
@@ -74,6 +89,7 @@
   color: rgb(48, 83, 72);
   box-shadow: 10px 10px 5px 0px rgb(170, 240, 192);
 }
+
 
 @media screen and (max-width: 800px) {
   .cards {
