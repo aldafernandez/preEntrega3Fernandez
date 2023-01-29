@@ -1,39 +1,52 @@
-nav{
+.navbar{
     background-color:rgb(162, 196, 191);
-    >label , >input {
+    display: flex;
+    >label , >input{
         display: none;
     }
-    .navbar{
+    ul{
         display: flex;
-        >a{
-            display: block;
-            color: $colorPrincipal;
-            font-size: 20px;
-            font-family: $font;
-            text-align: center;
-            padding: 14px 16px;
+        list-style-type: none;
+        gap: 20px;
+        font-size: 20px;
+        font-family: $font;
+        margin: 20px;
+        position: relative;
+        >li >a {
             text-decoration: none;
+            color: $colorPrincipal;
+        
         }
+        >li > ul {
+            position: absolute;
+            background-color:rgb(162, 196, 191);
+            max-height: 0;
+            overflow: hidden;
+          
+        }
+        
+  
     }
+}    
     
-}
+
 
 @media screen and (max-width: 550px){
-    nav{
+    .navbar{
     > label{
         display: block;
         color: white;
         font-size: 30px;
         padding: 10px;
        }
-       > input:checked + .navbar{
+       > input:checked + ul{
         max-height: 400px;
     }
-    .navbar{
+    >ul{
         flex-direction: column;
         max-height: 0px;
         overflow: hidden;
         transition: 0.5s;
     }    
- }   
+    }   
 }

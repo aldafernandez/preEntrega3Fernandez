@@ -11,17 +11,23 @@
         <link rel="stylesheet" href="../assets/css/style.css">
     </head>
     <body>
-        <nav>
+        <nav class="navbar">
             <label for="menu"><i class="fa-solid fa-bars"></i></label>
             <input type="checkbox" name="" id="menu">
-            <div class="navbar">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/productos.html">Productos</a>
-                <a href="../pages/contacto.html">Contacto</a>
-                <a href="../pages/nosotros.html">Nosotros</a>
-                <a href="../pages/gift-card.html">Gift Card</a>
-                </div>
-            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                    <ul>
+                        <li><a href="./productos.html">Accesorios</a></li>
+                        <li><a href="./productos.html">Ropa</a></li>
+                        <li><a href="./productos.html">Muebles</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./gift-card.html">Gift Card</a></li>
+            </ul>
         </nav>
         <header>
             <div class="filtros">
@@ -40,39 +46,6 @@
             </div>
         </header>
         <main>
-            <ul class="categorias">
-                <li>Accesorios
-                    <select name="listas">
-                        <option value="selec">Seleccione</option> 
-                        <option value="mantas">Mantas</option>
-                        <option value="A/A">Almohadón de amamantar</option>
-                        <option value="baberos">Baberos</option>
-                        <option value="portachupete">Portachupetes</option>
-                        <option value="set">Set de baño</option>
-                        <option value="munecos">Muñecos de apego</option>
-                    </select>
-                </li> 
-                <li>Ropa
-                    <select name="listas">
-                        <option value="selec">Seleccione</option> 
-                        <option value="conjuntos">Conjuntos</option>
-                        <option value="gorros">Gorros</option>
-                        <option value="pant">Pantalones</option>
-                        <option value="vest">Vestidos</option>                            <option value="trajes">Trajes de baño</option>
-                    </select>
-            
-                </li> 
-                <li>Muebles  
-                    <select name="listas">
-                        <option value="selec">Seleccione</option> 
-                        <option value="cunas">Cunas</option>
-                        <option value="cajonera">Cajoneras</option>
-                        <option value="camb">Cambiadores</option>
-                        <option value="colch">Colchones</option>
-                    </select>
-                </li> 
-                <input type="submit" value="Enviar">
-            </ul>
             <div class="tarjetas">
                 <div class="tarjeta">
                     <img src="../assets/img/baby-clothes.jpg" alt="ropa de bebé">
