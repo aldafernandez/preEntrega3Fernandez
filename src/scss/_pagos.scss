@@ -7,9 +7,5 @@
     color: $colorPrincipal;
     font-size: 20px;
     margin: 30px;
-   @include button {
-        background-color: $background;
-        color: white;
-
-   }
+   
 }

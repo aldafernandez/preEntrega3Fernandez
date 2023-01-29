@@ -24,10 +24,6 @@
             }
         }
     }
-    @include button {
-        background-color: $background;
-        color: $color;
-    }
 }
 @media screen and (max-width:800px) {
     .cards{
